@@ -1,0 +1,21 @@
+<div class="cards-container">
+  <div *ngFor="let pelicula of datosPeliculas" class="card">
+    <img
+      [src]="'https://image.tmdb.org/t/p/w500' + pelicula.poster_path"
+      style="height: 175px"
+    />
+    <div class="details">
+      <div class="tag">Tag</div>
+      <div class="title">
+        <span style="color: red">Titulo: </span> {{ pelicula.original_title }}
+      </div>
+      <div class="title">
+        <span style="color: red">Subtitulo: </span> {{ pelicula.title }}
+      </div>
+      <div class="overview">
+        <span style="color: red">Descripcion: </span> {{ pelicula.overview }}
+      </div>
+    </div>
+    <app-button-primary [disableButton]="false"></app-button-primary>
+  </div>
+</div>
