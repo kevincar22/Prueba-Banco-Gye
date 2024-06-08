@@ -1,0 +1,32 @@
+.custom-button {
+    background-color: #D2006E;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .custom-button:hover {
+    background-color: #BD0063;
+  }
+  
+  .custom-button:focus {
+    box-shadow: 0 0 5px #7E0042;
+  }
+  
+  .custom-button:active {
+    background-color: #93004D;
+  }
+  
+  .custom-button[disabled] {
+    background-color: #F9F9F9;
+    color: #999;
+    cursor: not-allowed;
+  }
+  
+  .label {
+    display: inline-block;
+  }
+  
